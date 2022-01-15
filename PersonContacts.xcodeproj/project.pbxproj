@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		6D2EB18E27918972000E685C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2EB18D27918972000E685C /* AppDelegate.swift */; };
 		6D2EB19027918972000E685C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2EB18F27918972000E685C /* SceneDelegate.swift */; };
-		6D2EB19227918972000E685C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2EB19127918972000E685C /* ViewController.swift */; };
 		6D2EB19527918972000E685C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D2EB19327918972000E685C /* Main.storyboard */; };
 		6D2EB19727918973000E685C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D2EB19627918973000E685C /* Assets.xcassets */; };
 		6D2EB19A27918973000E685C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D2EB19827918973000E685C /* LaunchScreen.storyboard */; };
+		6D2EB1A627918AA5000E685C /* PersonListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2EB1A527918AA5000E685C /* PersonListTableViewController.swift */; };
+		6D2EB1A927918BA4000E685C /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2EB1A827918BA4000E685C /* Person.swift */; };
+		6D2EB1AC27919B69000E685C /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2EB1AB27919B69000E685C /* DataManager.swift */; };
+		6D2EB1AE2791AA9A000E685C /* PersonInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2EB1AD2791AA9A000E685C /* PersonInformationViewController.swift */; };
+		6D2EB1B0279210F9000E685C /* PersonListWithContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2EB1AF279210F9000E685C /* PersonListWithContactViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6D2EB18A27918972000E685C /* PersonContacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonContacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D2EB18D27918972000E685C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6D2EB18F27918972000E685C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6D2EB19127918972000E685C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6D2EB19427918972000E685C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6D2EB19627918973000E685C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6D2EB19927918973000E685C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6D2EB19B27918973000E685C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D2EB1A527918AA5000E685C /* PersonListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonListTableViewController.swift; sourceTree = "<group>"; };
+		6D2EB1A827918BA4000E685C /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		6D2EB1AB27919B69000E685C /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		6D2EB1AD2791AA9A000E685C /* PersonInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonInformationViewController.swift; sourceTree = "<group>"; };
+		6D2EB1AF279210F9000E685C /* PersonListWithContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonListWithContactViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,67 @@
 		6D2EB18C27918972000E685C /* PersonContacts */ = {
 			isa = PBXGroup;
 			children = (
-				6D2EB18D27918972000E685C /* AppDelegate.swift */,
-				6D2EB18F27918972000E685C /* SceneDelegate.swift */,
-				6D2EB19127918972000E685C /* ViewController.swift */,
-				6D2EB19327918972000E685C /* Main.storyboard */,
-				6D2EB19627918973000E685C /* Assets.xcassets */,
-				6D2EB19827918973000E685C /* LaunchScreen.storyboard */,
-				6D2EB19B27918973000E685C /* Info.plist */,
+				6D2EB1A22791898F000E685C /* Storyboards */,
+				6D2EB1A12791897F000E685C /* Controllers */,
+				6D2EB1AA27919B1A000E685C /* Services */,
+				6D2EB1A727918B94000E685C /* Models */,
+				6D2EB1A4279189AF000E685C /* App */,
+				6D2EB1A3279189A4000E685C /* Resources */,
 			);
 			path = PersonContacts;
+			sourceTree = "<group>";
+		};
+		6D2EB1A12791897F000E685C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6D2EB1A527918AA5000E685C /* PersonListTableViewController.swift */,
+				6D2EB1AD2791AA9A000E685C /* PersonInformationViewController.swift */,
+				6D2EB1AF279210F9000E685C /* PersonListWithContactViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6D2EB1A22791898F000E685C /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				6D2EB19327918972000E685C /* Main.storyboard */,
+				6D2EB19827918973000E685C /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		6D2EB1A3279189A4000E685C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6D2EB19627918973000E685C /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6D2EB1A4279189AF000E685C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				6D2EB18D27918972000E685C /* AppDelegate.swift */,
+				6D2EB18F27918972000E685C /* SceneDelegate.swift */,
+				6D2EB19B27918973000E685C /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		6D2EB1A727918B94000E685C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6D2EB1A827918BA4000E685C /* Person.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6D2EB1AA27919B1A000E685C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				6D2EB1AB27919B69000E685C /* DataManager.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +198,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D2EB19227918972000E685C /* ViewController.swift in Sources */,
 				6D2EB18E27918972000E685C /* AppDelegate.swift in Sources */,
+				6D2EB1AC27919B69000E685C /* DataManager.swift in Sources */,
+				6D2EB1AE2791AA9A000E685C /* PersonInformationViewController.swift in Sources */,
 				6D2EB19027918972000E685C /* SceneDelegate.swift in Sources */,
+				6D2EB1B0279210F9000E685C /* PersonListWithContactViewController.swift in Sources */,
+				6D2EB1A927918BA4000E685C /* Person.swift in Sources */,
+				6D2EB1A627918AA5000E685C /* PersonListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,10 +355,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = KK9GF9S9VR;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PersonContacts/Info.plist;
+				INFOPLIST_FILE = PersonContacts/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -306,7 +371,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -319,10 +384,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = KK9GF9S9VR;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PersonContacts/Info.plist;
+				INFOPLIST_FILE = PersonContacts/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -334,7 +400,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
